@@ -74,7 +74,7 @@ func (p *Patterns) read(yamlPatterns string) error {
 	var data []Pattern
 	var err error
 
-	err = yaml.Unmarshal([]byte(defaultPatterns), &data)
+	err = yaml.Unmarshal([]byte(yamlPatterns), &data)
 	if err != nil {
 		return err
 	}
